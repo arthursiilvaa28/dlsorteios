@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+
+.conteiner-form-previu{
+    display: flex;
+    align-items: center;
+}
+.new-sorteio{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border-right: solid 1px #7d7d7d;
+}
+.new-sorteio>h1{
+    text-align: center;
+}
+.conteiner-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.conteiner-input > div:nth-child(1){
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+}
+.conteiner-input > input[type="number"], input[type="text"]{
+    font-size: 16px;
+    outline: 0;
+    padding: 0px 15px;
+    height: 50px;
+
+    border: none;
+    background-color: #d4d4d4;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 0 5px 5px 5px;
+
+    color: rgb(48, 48, 48);
+}
+.new-sorteio > button{
+    border: none;
+    background-color: #000000;
+    border-radius: 5px;
+    height: 50px;
+    color: #fff;
+    margin-top: 10px;
+
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.error{
+    color: #b51900;
+}
+.sucess{
+    color: #005000;
+}
+.previu{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 30px;
+    position: relative;
+}
+.previu > img {
+    border: solid 1px #8e8e8e;
+}
+.dados-sorteio{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.95) 5%, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0) 100%);
+    padding-left: 9px;
+}
+.desc-sorteio{
+    font-size:16px;
+    color: rgb(196, 196, 196);
+}
+.title-sorteio{
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* edit */
+.dados-notEdit{
+    position: relative;
+    font-size: 19px;
+    padding: 0px 15px;
+    height: 50px;
+    background-color: #969696;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 0 5px 5px 5px;
+    color: rgb(48, 48, 48);
+    display: flex;
+    align-items: center;
+}
+.help-noEdit{
+    position: absolute;
+    height: 60px;
+    top: -70px;
+    left: 0;
+    background-color: black;
+    border-radius: 4px;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    font-size: 16px;
+    animation: fadeIn ease 0.3s;
+}
+.dados-notEdit:hover .help-noEdit{
+    display: flex;
+}
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}

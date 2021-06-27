@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+body{
+    background-color: #e1e1e1;
+}
+
+.header-geral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.header-geral > div:nth-child(1){
+    font-weight: 700;
+    font-size: 38.5px;
+    color: rgb(82, 82, 82);
+}
+.header-geral > div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 44%;
+    height: 40px;
+    position: relative;
+}
+.header-geral > div > input {
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    padding-left: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(197, 197, 197);
+    background-color: rgb(0, 0, 0); 
+    border: none;
+    border-radius: 3px;
+    padding-right: 40px;
+}
+.lupa{
+    position: absolute;
+    width: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.conteiner-geral{
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 900px;
+    padding-bottom: 50px;
+}
+.conteiner-geral-itens{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.geral-intem{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #00000073;
+    width: 440px;
+    padding: 20px;
+}
+.title-geral{
+    font-size: 25px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+.body-geral{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.body-geral > div{
+    color: rgb(87, 87, 87);
+}
+.body-geral > a{
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+    font-weight: 700;
+}
+.buttons-geral{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons-geral > button {
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    border: none;
+    background-color: #000;
+    color: rgb(218, 218, 218);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.1px;
+    font-size: 18px;
+}
+.buttons-geral > button:hover{
+    transition: 0.3s;
+    color: #fff;
+}
+.notVendas{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(82, 82, 82);
+}

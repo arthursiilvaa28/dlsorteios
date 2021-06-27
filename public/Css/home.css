@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+.sorteioNot{
+    margin: 60px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.sorteioNot > h2  {
+    color: #fff;
+    font-weight: 400;
+}
+.slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -11px;
+}
+.play{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 10.3%;
+}
+#proximo{
+    position: absolute;
+    right: 0px;
+}
+.play > img {
+    width: 7%;
+    cursor: pointer;
+}
+.play > img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.button-go{
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.3px;
+    font-size: 25px;
+    padding: 12px 20px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(12, 12, 247);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.button-go:hover{
+    transition: 0.2s;
+    background-color: rgb(0, 0, 173);
+}
+.conteiner-now{
+    margin: 25px 0;
+}
+.header-now{
+    text-align: center;
+}
+.header-now > h1{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.2px;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 21px;
+}
+.now{
+    display: flex;
+    gap: 17.5px;
+    flex-wrap: wrap;
+    margin-top: 25px;  
+    justify-content: center;
+}
+.box-now{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+}
+.box-now > span{
+    width: 355px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.box-now > img {
+    width: 355px;
+    border-radius: 4px;
+}   
+.box-now:hover{
+    transform: scale(1.01);
+}
+@media (max-width: 740px) {
+    .slide{
+        display: none;
+    }
+    .button-go {
+        font-size: 16px;
+        padding: 6px 10px;
+        letter-spacing: 1.2px;
+        border-radius: 4px;
+    }
+}
+@media (max-width: 520px) {
+    .button-go {
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 4px 8px;
+    }
+    .box-now > img{
+        width: 100%;
+    }
+    .box-now > span{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+@media (max-width: 380px) {
+    .button-go {
+        font-size: 8px;
+        letter-spacing: 0px;
+        padding: 4px 4px;
+        border-radius: 2px;
+    }
+    
+}
+.profile-index .infor-pessoal span{
+    color: brown;
+}

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+
+
+
+.mn-minha-conta{
+        color: white;
+        margin-top: 15px;
+        font-family: 'Sigmar One', cursive;
+        font-size: 25px;
+}
+.email-user-perfil{
+    margin-top: 20px;
+}
+.span-user{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+}
+.input-infor{
+    width: 350px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+.input-infor-user{
+    position: absolute;
+    color:#708090;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.password{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 25px;
+    border: none;
+
+}
+.bnt-atualizar{
+    border: none;
+    margin-top: 15px;
+    width: 100px;
+    height: 35px;
+    background-color: #1E90FF;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px ;
+    font-family: sans-serif;
+}
+#ps{
+    margin-top: 15px;
+    color: red;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+@media (max-width: 640px){
+    .minhaconta-reponsive{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .profile-index .email-user-perfil .input-infor {
+        width: 280px;
+    }
+}

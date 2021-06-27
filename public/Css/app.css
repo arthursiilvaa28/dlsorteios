@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+body{
+    background-color: #1C1C1C;
+}
+#logo-ico{
+    width: 22px;
+    height: 22px;
+}
+#header_conteiner{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 65px;
+    z-index: 2;
+}
+.header_content{
+    font-family: 'Sigmar One', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    position: relative;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+/*  aqui*/
+.menu-resposivo-conteiner{
+    position: absolute;
+    top: 75px;
+    display: none;
+    width: 100%;
+    padding: 0px 50px;
+    z-index: 2;
+    display: none;
+}
+.menu-resposivo{
+    padding: 30px 40px;
+    background-color: rgb(19, 19, 19);
+    height: 400px;
+}
+#humbugue{
+    width: 50px;
+    display: none;
+}
+.nav-perfil{
+    display: flex;
+}
+
+.navegations-responsivo{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 40px;
+
+}
+.items-res{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+.items-text-res{
+    font-size: 20px;
+}
+
+.items-img-res{
+    height: 25px;
+}
+
+.navegations{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    
+}
+.perfil-res{
+    color: rgb(190, 190, 190);
+}
+.perfil-res .pf-res{
+        display: absolute;
+        text-decoration: none;
+        margin-top: 25px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Sigmar One', cursive;
+
+}
+.items, .perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+.perfil{
+    position: relative;
+    margin-left: 45px;
+}
+.perfil:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.items:hover{
+    transition: 0.3s;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.items-text{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.items-img{
+    height: 18px;
+}
+.items-img-show{
+    height: 8px;
+}
+#humbugue{
+    color: white;
+    width: 28px;
+    height: 28px;
+}
+/* conteineir - content */
+.conteiner{
+    display: flex;
+    justify-content: center;
+
+}
+.content{
+    width: 95%;
+    max-width: 1200px;
+    padding: 0 50px;
+    position: relative;
+} 
+.site{
+    position: relative;
+    top: 75px;
+}
+.help{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.2px;
+    margin-top: 15px;
+}
+.help-header{
+    text-align: center;
+}
+.help-header > h1{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 21px;
+}
+.conteiner-help{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 25px;
+    gap: 18.3333px;
+}
+.content-help{
+    width: 261.25px;
+    background-color: rgb(36, 36, 36);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.content-help:hover{
+    transition: 0.2s;
+    transform: scale(1.03);
+}
+.content-help > img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding: 0px 30px; */
+    height: 125px;
+}
+.content-help > div {
+    margin-top: 20px;
+}
+.content-help > div > h1{
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 17.5px;
+}
+.content-help > div > h2{
+    color: rgb(212, 212, 212);    
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 18px;
+}
+/* footer */
+.footer-color{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 125px;
+}
+.footer{
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.1px;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+}
+.footer > div:nth-child(1){
+    font-weight: 700;
+}
+.footer > div:nth-child(2){
+    font-weight: 400;
+    color: rgb(235, 235, 235);
+}
+.show{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 8px 0px 8px 8px;
+    width: 200px;
+    padding: 15px 20px;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    top: 27px;
+    right: 0;
+    animation: fadeIn ease 0.2s;
+}
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+.profile-header{
+    color: rgb(139, 139, 139);
+    font-size: 15px;
+    font-style: italic;
+}
+.show > hr {
+    margin-bottom: 10px;
+}
+.show > a {
+    text-decoration: none; 
+}
+.logout-res{
+    margin-top: 40px;
+}
+.logout-res > button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+.text-profilehoverEx{
+    color: rgb(190, 190, 190);
+    font-size: 20px;
+}
+.text-profilehoverEx:hover{
+    color: rgb(255, 255, 255);
+}
+.logout{
+    margin-top: 5px;
+}
+.logout > button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+.text-profilehover{
+    font-size: 17px;
+    color: rgb(54, 54, 54);
+}
+.text-profilehover:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+#calculator{
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgb(54, 55, 56);
+    padding: 10px 0px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    
+}
+.backgroudAch{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    display: none;
+}
+@media (max-width: 1000px) {
+    .logo{
+        font-size: 20px;
+    }
+    .navegations{
+        gap: 15px;
+    }
+    .items, .perfil{
+        gap: 5px;
+    }
+    .perfil{
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 740px) {
+    #humbugue{
+        display: block;
+    }
+    .nav-perfil{
+        display: none;
+    }
+    .items-text{
+        font-size: 20px;
+    }
+}

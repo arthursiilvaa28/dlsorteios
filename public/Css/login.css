@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;2,700;3, 800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+.center-lg-rg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.center-lg-rg .conteiner-login{
+    width: 585px;
+    background-color: #fff;
+    padding: 40px 40px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+}
+.conteiner-login .favicon-ico-logo-login{
+    display: flex;
+    justify-content: center;
+}
+.conteiner-login form .favicon-ico-logo-login img{
+    width: 100px;
+    height: 100px;
+}
+
+.form{
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: -20px;
+    width: 500px;
+}
+.title{
+    font-family: 'Sigmar One', cursive;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    letter-spacing: 1.3px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input > span{
+    color: #444444;
+}
+
+.inp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.inp > input{
+    width: 100%;
+    border-width: 0px;
+    background-color: #d4d4d4;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 0 5px 5px 5px;
+    outline: 0;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 15px;
+    letter-spacing: 1.3px;
+}
+.inp > img{
+    box-sizing:content-box;
+    padding: 5px;
+    position: absolute;
+    width: 27px;
+    cursor: pointer;
+    margin-right: 5px;
+}   
+.button{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(26, 26, 26);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.button:hover{
+    transition: 0.3s;
+    background-color: #000;
+}
+.register-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.register-forgot > a {
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+}
+.register-forgot > a:hover{
+    text-decoration: underline rgb(77, 77, 77);
+}
+#error{
+    color: red;
+    margin-bottom: 8px;
+}
+.errors{
+    color: red;
+    margin-top: 5px;
+}
+
+
+@media (max-width: 640px) {
+    .form{
+        width: 100%;
+        margin-top: -20px;
+    }
+    .conteiner-login {
+        top: 0px;
+        left: 0px;
+        transform: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 0px;
+        height: 70vh;
+    }
+    #cd-conteiner{
+        height: 105vh;
+    }
+}

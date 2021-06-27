@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+.notBilhete{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.conteiner-table{
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+    border-radius: 8px;
+    overflow: auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header-table{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.table-bilhete {
+    color: #fff;
+    border-spacing: 0px;
+    
+}
+.table-bilhete th{
+    padding: 5px;
+    font-size: 14px;
+}
+.table-bilhete td{
+    position: relative;
+    padding: 5px;
+    font-size: 13px;
+    color: rgb(187, 187, 187);
+}
+.pagment-envia{
+    text-decoration: none;
+    color: #fff;
+}
+.completo{
+    color: rgb(0, 167, 0);
+}
+.pendente{
+    color: rgb(177, 144, 0);
+}
+.analise{
+    color: #ff7300;
+}
+.recusado{
+    color: rgb(150, 0, 0);
+}
+
+.descripition-status{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    padding: 15px;
+    background-color: #000;
+    border-radius: 7px 7px 0px 7px;
+    left: -306px;
+    bottom: 4px;
+    display: none;
+    color: #fff;
+}
+.descripition-status > p{
+    margin-top: 5px;
+    color: rgb(194, 194, 194);
+}
+.hover-status{
+    cursor: default;
+}
+.hover-status:hover .descripition-status{
+    display: block;
+}
+.enviar{
+    cursor: pointer;
+}
+.enviar:hover{
+    color: #fff;
+}
+
+.sucess-comprovante{
+    color: rgb(0, 133, 0);
+    margin-bottom: 5px;
+}
+.error-comprovante{
+    color: rgb(255, 0, 0);
+    margin-bottom: 5px;
+}
